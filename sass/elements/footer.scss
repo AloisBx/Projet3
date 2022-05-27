@@ -1,0 +1,35 @@
+/* Footer */
+footer{
+    background-color: #333;
+    padding: 1.3em;
+
+    h1{
+        color: #fff;
+        padding: 0 1.3em;
+        font-size: 1.3em;
+        font-weight: normal;
+        font-family: 'Shrikhand', cursive;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0.9em 1.3em;
+        list-style-type: none;
+
+        li{
+            padding: 5px;
+
+            .footer-span{
+                display: inline-block;
+                width: 25px;
+            }
+            .footer-span i{
+                font-size: 0.8em;
+            }
+            a, .footer-span i{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}

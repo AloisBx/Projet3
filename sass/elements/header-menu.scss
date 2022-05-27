@@ -1,0 +1,23 @@
+
+// header des pages de menu
+.nav-bar{
+    position: relative;
+    text-align: center;
+    padding: 1.6em 0 0.7em;
+    box-shadow: inset 0px -1px 0px #c5c5c6;
+    background: #fff;
+
+    a{
+        position: absolute;
+        top: 55%;
+        left: 1.5em;
+        transform: translateY(-50%);
+
+        i{
+            font-size: 1.2em;
+            color: #000;
+        }
+    }
+
+}
+
