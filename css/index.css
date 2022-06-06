@@ -22,6 +22,7 @@ footer h1 {
   padding: 0 1.3em;
   font-size: 1.3em;
   font-weight: normal;
+  font-family: "Shrikhand", cursive;
 }
 footer ul {
   display: flex;
@@ -44,6 +45,69 @@ footer ul li a, footer ul li .footer-span i {
   text-decoration: none;
 }
 
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  animation: spinner 2.5s linear;
+  visibility: hidden;
+}
+.center .ring {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: ring 1s linear infinite;
+}
+.center .text-loader {
+  font-family: "Shrikhand", cursive;
+  color: #959595;
+  font-size: 36px;
+  line-height: 500px;
+  animation: text 1s ease-in-out infinite;
+}
+
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 2px 5px 2px #9356DC;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 2px 5px 2px #99E2D0;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 2px 5px 2px #FF79DA;
+  }
+}
+@keyframes text {
+  50% {
+    color: black;
+  }
+}
 h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -98,6 +162,7 @@ header {
   align-items: center;
   gap: 1.3em;
   text-align: center;
+  width: 100%;
 }
 .explorer .main-wrapper h2 {
   width: 80%;
@@ -260,6 +325,27 @@ header {
 }
 .heart-position .heart:hover .heart-2 {
   transform: scale(100%);
+}
+
+@media only screen and (min-width: 992px) {
+  .functioning {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .functioning ol {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .functioning ol li {
+    width: 100%;
+  }
+
+  .restaurants-list-cards {
+    flex-direction: row;
+  }
+  .restaurants-list-cards .restaurants-article {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
