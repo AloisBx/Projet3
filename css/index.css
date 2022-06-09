@@ -232,7 +232,7 @@ header {
   font-size: 1.3em;
 }
 .functioning ol li:hover {
-  background-color: rgba(146, 86, 220, 0.0901960784);
+  background-color: rgba(146, 86, 220, 0.2352941176);
 }
 .functioning ol li:hover i {
   color: #9356DC;
@@ -314,7 +314,7 @@ header {
 }
 .heart-position .heart-2 {
   position: relative;
-  transform: scale(0);
+  transform: scale(0%);
   transition: transform 0.1s ease-in;
   background: rgb(255, 121, 218);
   background: linear-gradient(32deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
@@ -324,7 +324,7 @@ header {
   font-size: 1.8em;
 }
 .heart-position .heart:hover .heart-2 {
-  transform: scale(1);
+  transform: scale(100%);
 }
 
 @media only screen and (min-width: 992px) {

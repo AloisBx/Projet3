@@ -143,13 +143,13 @@ footer ul li a, footer ul li .footer-span i {
   animation: fadeIn 0.5s 1 ease-in;
 }
 .main-section .menu-block div:nth-child(3) {
-  animation: fadeIn 1s 1 ease-in;
+  animation: fadeIn 0.8s 1 ease-in;
 }
 .main-section .menu-block div:nth-child(4) {
-  animation: fadeIn 1.5s 1 ease-in;
+  animation: fadeIn 1.2s 1 ease-in;
 }
 .main-section .menu-block div:nth-child(5) {
-  animation: fadeIn 2s 1 ease-in;
+  animation: fadeIn 1.5s 1 ease-in;
 }
 .main-section .menu-title {
   padding: 1em 0;
@@ -276,6 +276,10 @@ footer ul li a, footer ul li .footer-span i {
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    top: 10%;
+  }
+  80% {
+    top: 0%;
   }
   100% {
     opacity: 1;
